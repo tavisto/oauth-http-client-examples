@@ -6,4 +6,5 @@
 	url = https://github.com/icheishvili/pyoauth.git
 [submodule "php/lib/zf2"]
 	path = php/lib/zf2
-	url = https://github.com/zendframework/zf2.git
+    url = https://github.com/zendframework/zf2.git
+    ignore = dirty
