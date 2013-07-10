@@ -61,6 +61,7 @@ class PhoAuthHttpClient {
             $this->client = new Client(
                 $this->buildUri($options['requestConfig'])
             );
+            $this->client->setAdapter(new \Zend\Http\Client\Adapter\Curl());
             $this->client->setParameterGet($options['requestConfig']['params']);
             $this->client->setMethod($options['requestConfig']['method']);
             $this->setOAuthHeader($options['requestConfig']);
